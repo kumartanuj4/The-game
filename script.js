@@ -61,7 +61,7 @@ btnHold.addEventListener('click', function(){
         document.getElementById(`score--${activePlayer}`).textContent = score[1];
 
     }
-    if(score[1] >= 10 || score[0] >= 10){
+    if(score[1] >= 30 || score[0] >= 30){
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
         document.querySelector(`#name--${activePlayer}`).textContent = "Winner";
         playersPlaying = false;
